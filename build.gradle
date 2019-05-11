@@ -9,6 +9,7 @@ def computeVersionName() {
 
 buildscript {
     repositories {
+        google()
         jcenter()
     }
 
@@ -36,9 +37,10 @@ android {
 }
 
 repositories {
+    google()
     mavenCentral()
 }
 
 dependencies {
-    compile 'com.facebook.react:react-native:+'
+    compile 'com.facebook.react:react-native:0.20.1'
 }
