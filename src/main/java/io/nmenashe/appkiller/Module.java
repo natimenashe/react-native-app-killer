@@ -33,6 +33,12 @@ public class Module extends ReactContextBaseJavaModule {
 
   @ReactMethod
   public void kill() {
-    getCurrentActivity().finishAndRemoveTask();
+      getCurrentActivity().finishAndRemoveTask();
+  }
+
+  @ReactMethod
+  public void moveAppToBackground(){
+      getCurrentActivity().moveTaskToBack(true);
+
   }
 }
